@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Contact Form</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url("../imagens/contactForm/bg-intro-desktop.png");
+      background-color: hsl(0, 100%, 74%);
+      font-family: 'poppins';
+      color: white;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      align-items: center;
+      justify-content: space-evenly;
+    
+    }
+
+    div#principal {
+      box-shadow: 0px 5px 0px rgba(0, 0, 0, .2);
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    form#dados {
+      list-style-type: none;
+      padding: 0px;
+      color: black;
+    }
+
+    p#rodape {
+      color: black
+    }
+    p#preco{
+      font-size: 10pt;
+      background-color: hsl(248, 32%, 49%);
+      width: 470px;
+      padding: 15px 15px 15px 15px;
+      margin: 10;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0px 5px 0px rgba(0, 0, 0, .2);
+    }
+
+    input{
+      display: flex;
+      float: center;
+      width: 90%;
+      margin: 30px;
+      padding: 18px ;
+      border-radius: 5px;
+      border-width: 1px;
+    }
+    button{
+      color:white;
+      background-color: hsl(154, 59%, 51%);
+      font-weight: 900;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      float: center;
+      width:90%;
+      margin: 30px;
+      padding: 20px ;
+      border-radius: 5px;
+      border:none;
+      cursor: pointer;
+    }
+    textarea{
+      display: flex;
+      float: center;
+      width: 90%;
+      margin: 30px;
+      padding: 18px ;
+      border-radius: 5px;
+      border-width: 1px;
+    }
+    
+    button:hover{
+      background-color: hsl(154, 59%, 41%);
+    }
+    
+    p.dado{
+      font-weight: 900;
+    }
+    p#rodape{
+      font-size: 10pt;
+    }
+    
+    .contat:focus{
+      box-shadow:  5px rgba(0, 0, 0, .5);
+    }
+    .contat::placeholder{
+      color: hsl(246, 25%, 77%);
+
+    }
+    @media (max-width: 800px) {
+      .contat{
+        width: 80vw;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <aside id="cadastro">
+    <p id="preco"><b>Send an email to contact</b></p>
+
+    <div id="principal">
+      
+      <form id="dados" action="https://api.web3forms.com/submit" method="POST">
+        
+        <input type="hidden" name="access_key" value="05f66c38-5cb5-4cc0-9084-c21531701911">
+        
+        
+        <p class="dado">
+          <input type="text" name="Name" id="cFNome" size="20" maxlength="40" placeholder="First Name" class="contat required">
+        </p>
+
+        <p class="dado">
+          <input type="email" name="Email" id="cEmail" size="30" maxlength="40" placeholder="Email Address" class="contat required">
+        </p>
+
+        <p class="dado">
+          <textarea name="message" placeholder="Your Message" class="contat" required></textarea>
+        </p>
+
+        <button type="submit">Send your email</button>
+        <p id="rodape">By clicking the button, you are sending an email to gabrielmparrini@gmail.com</p>
+      </form>
+    </div>
+  </aside>
+</body>
+</html>
+
+
+
+  <footer>
+    <p class="attribution">
+      Coded by <a href="#">Gabriel Parrini</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
