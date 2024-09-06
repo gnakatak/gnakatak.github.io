@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_imersao.css">
+    <title>VCT Américas</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/vct-logo.png" width="80px">
+        <h1>Times do VCT</h1>
+    </header>
+
+    <main>
+        <section>
+            <input type="text" placeholder="digite o nome do time" id="campo-pesquisa">
+            <div class="botoes">
+                <button onclick="pesquisar(PESQUISA_EXATA)">pesquisar</button>
+                <button onclick="pesquisar(PESQUISA_COMPLETA)">todos os times</button>
+            </div>
+        </section>
+        
+        <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    
+    </main>
+
+    <footer>
+        <p>2024 - times do VCT Américas. Todos os direitos reservados.</p>
+        <p>Entre em contato pelo email: gabrielmparrini@gmail.com</p>
+    </footer>
+    <script src="dados_imersao.js"></script>
+    <script src="app_imersao.js"></script>
+
+</body>
+
+</html>
